@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return "<h1> Hello world </h1>";
 });
+
+Route::get("about", function () {
+    return "<h1> This is from the About </h1>";
+});
+Route::get("contact", function () {
+    return "<h1> This is from Contact Us</h1>";
+});
+Route::get("newslatter", function () {
+    return "<h1> This is from the news latter of the website </h1>";
+});
+
